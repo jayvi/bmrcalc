@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>BMR</title>
+    <script src="js/bmr.js"></script>
+  </head>
+  <body>
+    <h3>Calorie Calculator</h3>
+    <form id="info">
+      <fieldset style="width:300px">
+        <legend>Information</legend>
+        <table>
+          <tr>
+            <td>Gender:</td>
+            <td>
+            <input type="radio" name="gen" id="gen" value="female" checked="checked" />Female 
+            <input type="radio" name="gen" id="gen" value="male" />Male</td>
+          </tr>
+          <tr>
+            <td>Height:</td>
+            <td>
+            <input type="text" name="h" id="h" size="20" />(cm)</td>
+          </tr>
+          <tr>
+            <td>Weight:</td>
+            <td>
+            <input type="text" name="w" id="w" size="20" />(kg)
+            <br /></td>
+          </tr>
+          <tr>
+            <td>Age:</td>
+            <td>
+              <input type="text" name="age" id="age" size="20" />
+              <br />
+            </td>
+          </tr>
+          <tr>
+            <td>Activeness:</td>
+            <td>
+              <select name="active" id="active">
+                <option value="0">Sedentary</option>
+                <option value="1">Lightly Active</option>
+                <option value="2">Moderately Active</option>
+                <option value="3">Very Active</option>
+                <option value="4">Extra Active</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <input type="button" onclick="calc()" value="Calculate The Calorie" />
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+    <form>
+      <fieldset style="width:300px">
+        <legend>Result</legend>
+        <table>
+          <tr>
+            <td>Calorie Need:</td>
+            <td>
+              <input type="text" id="result" name="result" readonly />
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+    <!--  Ctrl + Alt + F to beautifier js code -->
+    <br />
+    <footer>Copyright &copy 2014 Pei-Han Chao. All Rights Reserved.</footer>
+  </body>
+</html>
